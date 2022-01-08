@@ -1,12 +1,12 @@
 <?php
-namespace Application\vendor\autoload;
+namespace app\vendor\autoload;
 
 class Loader {
 
     const UNABLE_TO_LOAD ='Unable to load class';
     protected static $dirs = array();
     protected static $registered =0;
-    
+
     public function __construct(array $dirs =array()){
         self::init($dirs);
     }
@@ -18,7 +18,7 @@ class Loader {
         }else {
             self::$dirs[]=$dirs;
         }
-        
+
     }
     public static  function init($dirs = array()){
         if ($dirs) {
@@ -28,8 +28,8 @@ class Loader {
             spl_autoload_register(__CLASS__.'::autoload');
             self::$registered++;
         }
-        
-        
+
+
     }
     public static  function autoLoad($class){
         $success = false;
@@ -44,13 +44,13 @@ class Loader {
             if (!$success) {
                 if (!self::loadFile(__DIR__.DIRECTORY_SEPARATOR.$fn)) {
                     throw new \Exception(self::UNABLE_TO_LOAD.' '.$class);
-                    
+
                 }
-                
+
             }
-            
+
            return $success;
-        
+
     }
     protected static function loadFile($file){
         if (file_exists($file)) {
@@ -58,8 +58,7 @@ class Loader {
             return true;
         }
        return false;
-        
-    }
-    
-}
 
+    }
+
+}
