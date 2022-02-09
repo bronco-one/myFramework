@@ -1,0 +1,15 @@
+{
+    "name": "bronco/my-framework",
+    "autoload": {
+        "psr-4": {
+            "Bronco\\MyFramework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zdzisław Bronikowski",
+            "email": "zdzislaw.bronikowski@gmail.com"
+        }
+    ],
+    "require": {}
+}
