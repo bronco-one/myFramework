@@ -3,6 +3,9 @@
 
 namespace app\controllers;
 
-class Home extends Controller{
+class Home {
 
+    public function index(){
+        echo "To jest klasa Home";
+    }
 }
