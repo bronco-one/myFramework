@@ -2,7 +2,7 @@
     "name": "bronco/my-framework",
     "autoload": {
         "psr-4": {
-            "Bronco\\MyFramework\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [

@@ -1,10 +1,10 @@
 <?php 
 
-require_once '../app/controllers/home.php';
+require_once '../vendor/autoload.php';
 
 
-use app\controllers\Home;
+use App\core\Application;
 
-$test = new Home();
- $test->index();
+$test = new App\core\Application();
+ //$test->index();
 
