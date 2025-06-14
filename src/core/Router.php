@@ -2,8 +2,10 @@
 
 namespace app\core;
 
-class Router {{ 
+class Router {
 
-    public function __construct()
+    public function __construct(){
+        
+    }
     
- }}
+ }
