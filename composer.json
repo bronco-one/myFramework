@@ -11,5 +11,7 @@
             "email": "zdzislaw.bronikowski@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phroute/phroute": "^2.2"
+    }
 }
