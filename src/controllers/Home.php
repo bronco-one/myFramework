@@ -6,6 +6,6 @@ namespace app\controllers;
 class Home {
 
     public function index(){
-        echo "To jest klasa Home";
+        echo "To jest klasa Home!";
     }
 }
